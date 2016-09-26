@@ -1,5 +1,5 @@
 {
-  "packagingVersion": "3.0",
+  "packagingVersion": "2.0",
   "scm": "https://github.com/ngageoint/scale.git",
   "postInstallNotes": "The Scale DCOS Service has been successfully installed!\n\n\tDocumentation: https://ngageoint.github.io/scale/\n\tIssues: https://github.com/ngageoint/scale/issues",
   "maintainer": "http://www.nga.mil",
