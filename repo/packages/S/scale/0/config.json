@@ -93,7 +93,7 @@
           "type": "string"
         },
         "deploy-logging": {
-          "default": "true",
+          "default": "false",
           "description": "Deploy Logging",
           "type": "string"
         },
