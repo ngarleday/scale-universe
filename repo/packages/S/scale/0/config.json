@@ -40,7 +40,7 @@
         "db-host": {
           "type": "string",
           "description": "DB Hostname",
-          "default": "scale-db.marathon.mesos"
+          "default": "rdhpwngmp-01"
         },
         "db-port": {
           "type": "string",
@@ -50,7 +50,7 @@
         "deploy-db": {
           "type": "string",
           "description": "Deploy the dockerized postgres DB (true or false). Must supply db-host, db-user, db-pass, and db-port",
-          "default": "true"
+          "default": "false"
         },
         "nfs-postgres-uid": {
           "type": "string",
@@ -93,7 +93,7 @@
           "type": "string"
         },
         "deploy-logging": {
-          "default": "false",
+          "default": "true",
           "description": "Deploy Logging",
           "type": "string"
         },
