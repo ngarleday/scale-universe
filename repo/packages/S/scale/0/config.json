@@ -40,7 +40,7 @@
         "db-host": {
           "type": "string",
           "description": "DB Hostname",
-          "default": "rdhpwngmp-01.711HPW.afrl-wrs.hpc.mil"
+          "default": "scale-db.marathon.mesos"
         },
         "db-port": {
           "type": "string",
@@ -50,7 +50,7 @@
         "deploy-db": {
           "type": "string",
           "description": "Deploy the dockerized postgres DB (true or false). Must supply db-host, db-user, db-pass, and db-port",
-          "default": "false"
+          "default": "true"
         },
         "nfs-postgres-uid": {
           "type": "string",
