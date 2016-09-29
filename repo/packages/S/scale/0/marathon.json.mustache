@@ -59,7 +59,10 @@
       "ENABLE_HTTPD": "{{scale.enable-httpd}}",
       "INIT_DB": "{{scale.init-db}}",
       "LOGSTASH_DOCKER_IMAGE": "{{resource.assets.container.docker.logstash}}",
-      "SCALE_USE_X_FORWARDED_HOST": "{{scale.use-x-forwared-host}}"
+      "SCALE_USE_X_FORWARDED_HOST": "{{scale.use-x-forwared-host}}",
+      "DCOS_URL": "{{scale.dcos-url}}",
+      "DCOS_USER": "{{scale.dcos-user}}",
+      "DCOS_PASS": "{{scale.dcos-pass}}"
     },
     "args": [
     "scale_scheduler"
