@@ -2,7 +2,7 @@
   "assets": {
     "container": {
       "docker": {
-         "scale-scheduler": "docker.io/geoint/scale:latest",
+         "scale-scheduler": "docker.io/ngarleday/scale:latest",
          "scale-jobs": "docker.io/ngarleday/scale",
          "db": "docker.io/mdillon/postgis",
          "logstash": "docker.io/geoint/logstash-elastic-ha"
