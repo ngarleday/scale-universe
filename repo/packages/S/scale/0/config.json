@@ -118,7 +118,7 @@
           "type": "string"
         },
         "dcos-url": {
-          "default": "http://mesos.master",
+          "default": "http://master.mesos",
           "description": "DCOS URL for the DCOS CLI. This is needed if Deploy DB or LOGGING are enabled.",
           "type": "string"
         },
