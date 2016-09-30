@@ -22,16 +22,6 @@
           "description": "Allowed Hosts",
           "default": "*"
         },
-        "marathon-lb-port": {
-          "type": "integer",
-          "description": "Marathon LoadBalancer port for Scale Web GUI",
-          "default": 8008
-        },
-        "vhost-name": {
-          "type": "string",
-          "description": "Virtual Hostname for Marathon-LB",
-          "default": "scale.711HPW.afrl-wrs.hpc.mil"
-        },
         "zk-url-enable": {
           "default": false,
           "description": "Enable/Disable Scheduler Election",
@@ -91,6 +81,16 @@
           "default": "deploy",
           "description": "DCOS Password for the DCOS CLI. This is needed if Deploy DB or LOGGING are enabled.",
           "type": "string"
+        },
+        "marathon-lb-port": {
+          "type": "integer",
+          "description": "Marathon LoadBalancer port for Scale Web GUI",
+          "default": 8008
+        },
+        "vhost-name": {
+          "type": "string",
+          "description": "Virtual Hostname for Marathon-LB",
+          "default": "scale.711HPW.afrl-wrs.hpc.mil"
         }
       }
     },
@@ -124,7 +124,7 @@
         "db-host": {
           "type": "string",
           "description": "DB Hostname",
-          "default": "rdhpwngmp-01"
+          "default": "scale-db.marathon.slave.mesos"
         },
         "db-port": {
           "type": "string",
