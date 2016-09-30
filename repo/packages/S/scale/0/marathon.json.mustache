@@ -32,11 +32,11 @@
       "HAPROXY_0_VHOST":"{{scale.vhost-name}}"
     },
     "env": {
-      "SCALE_DB_NAME": "{{scale.db-name}}",
-      "SCALE_DB_USER": "{{scale.db-user}}",
-      "SCALE_DB_PASS": "{{scale.db-pass}}",
-      "SCALE_DB_HOST": "{{scale.db-host}}",
-      "SCALE_DB_PORT": "{{scale.db-port}}",
+      "SCALE_DB_NAME": "{{db.db-name}}",
+      "SCALE_DB_USER": "{{db.db-user}}",
+      "SCALE_DB_PASS": "{{db.db-pass}}",
+      "SCALE_DB_HOST": "{{db.db-host}}",
+      "SCALE_DB_PORT": "{{db.db-port}}",
       "MESOS_MASTER_URL": "{{scale.master}}",
       "DCOS_PACKAGE_FRAMEWORK_NAME": "{{scale.framework-name}}",
       "SCALE_SECRET_KEY": "{{scale.secret-key}}",
@@ -48,21 +48,19 @@
       {{#scale.zk-url-enable}}
       "SCALE_ZK_URL": "{{scale.zk-url}}",
       {{/scale.zk-url-enable}}
-      "DEPLOY_DB": "{{scale.deploy-db}}",
-      "NFS_POSTGRES_UID": "{{scale.nfs-postgres-uid}}",
-      "NFS_POSTGRES_GID": "{{scale.nfs-postgres-gid}}",
+      "DEPLOY_DB": "{{db.deploy-db}}",
       "DB_DOCKER_IMAGE": "{{resource.assets.container.docker.db}}",
-      "SCALE_DB_HOST_VOL": "{{scale.db-host-vol}}",
+      "SCALE_DB_HOST_VOL": "{{db.db-host-vol}}",
       "CONFIG_URI": "{{scale.docker-creds}}",
-      "DEPLOY_LOGGING": "{{scale.deploy-logging}}",
+      "DEPLOY_LOGGING": "{{logstash.deploy-logging}}",
       "ENABLE_GUNICORN": "{{scale.enable-gunicorn}}",
       "ENABLE_HTTPD": "{{scale.enable-httpd}}",
-      "INIT_DB": "{{scale.init-db}}",
+      "INIT_DB": "{{db.init-db}}",
       "LOGSTASH_DOCKER_IMAGE": "{{resource.assets.container.docker.logstash}}",
       "SCALE_USE_X_FORWARDED_HOST": "{{scale.use-x-forwared-host}}",
-      "DCOS_URL": "{{scale.dcos-url}}",
-      "DCOS_USER": "{{scale.dcos-user}}",
-      "DCOS_PASS": "{{scale.dcos-pass}}"
+      "DCOS_URL": "{{dcos.dcos-url}}",
+      "DCOS_USER": "{{dcos.dcos-user}}",
+      "DCOS_PASS": "{{dcos.dcos-pass}}"
     },
     "args": [
     "scale_scheduler"
