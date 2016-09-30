@@ -25,11 +25,11 @@
     "labels":{
       "DCOS_PACKAGE_FRAMEWORK_NAME": "{{scale.framework-name}}",
       "HAPROXY_GROUP":"internal,external",
-      "HAPROXY_0_PORT":"{{scale.marathon-lb-port}}",
+      "HAPROXY_0_PORT":"{{dcos.marathon-lb-port}}",
       "DCOS_SERVICE_SCHEME": "http",
       "DCOS_SERVICE_NAME": "{{scale.framework-name}}",
       "DCOS_SERVICE_PORT_INDEX": "0",
-      "HAPROXY_0_VHOST":"{{scale.vhost-name}}"
+      "HAPROXY_0_VHOST":"{{dcos.vhost-name}}"
     },
     "env": {
       "SCALE_DB_NAME": "{{db.db-name}}",
