@@ -109,7 +109,7 @@
         "deploy-db": {
           "type": "string",
           "description": "Deploy the dockerized postgres DB (true or false). Must supply db-host, db-user, db-pass, and db-port",
-          "default": "true"
+          "default": "false"
         },
         "db-name": {
           "type": "string",
@@ -129,7 +129,7 @@
         "db-host": {
           "type": "string",
           "description": "DB Hostname",
-          "default": "scale-db.marathon.slave.mesos"
+          "default": "rdhpwngmp-01"
         },
         "db-port": {
           "type": "string",
