@@ -52,15 +52,18 @@
           "description": "Use X Forwarded Host",
           "type": "string"
         }        
-      },
-      "required": ["framework-name"],
-      "type": "object"
+      }
     },
-    "logstash":{
+    "logging":{
       "properties":{
         "deploy-logging": {
           "default": "true",
           "description": "Deploy Logging",
+          "type": "string"
+        },
+        "elasticsearch-urls": {
+          "default": "",
+          "description": "ElasticSearch URL's for Scale",
           "type": "string"
         }
       }
