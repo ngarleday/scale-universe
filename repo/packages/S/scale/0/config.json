@@ -112,7 +112,7 @@
         "deploy-db": {
           "type": "string",
           "description": "Deploy the dockerized postgres DB (true or false). Must supply db-host, db-user, db-pass, and db-port",
-          "default": "true"
+          "default": "false"
         },
         "db-name": {
           "type": "string",
